@@ -2,8 +2,8 @@ import { DataSource, DataSourceOptions } from 'typeorm';
 
 export const dataSourceOptions: DataSourceOptions = {
   type: 'mysql',
-  host: 'localhost',
-  port: 3306,
+  host: process.env.DB_HOST,
+  port: parseInt(process.env.DB_PORT, 10),
   username: 'root',
   password: 'password',
   database: 'quiz1',
