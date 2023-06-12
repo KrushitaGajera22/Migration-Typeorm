@@ -6,7 +6,7 @@ export const dataSourceOptions: DataSourceOptions = {
   port: parseInt(process.env.DB_PORT, 10),
   username: 'root',
   password: 'password',
-  database: 'quiz1',
+  database: 'migration',
   entities: ['dist/**/*.entity.js'],
   migrations: ['dist/db/migrations/*.js'],
 };
